@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: aqua;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-image: url(../images/Hubble-deep-field.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 15px;
+    border-bottom: 3px solid salmon;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:visited {
+    color:aquamarine;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 15px 10px;
+    font-size: 1.5vw;
+}
+/* End Header Styles */
+
+/* Hero Style */
+.hero-style {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/Nebula-cloud.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid salmon;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.hero-style h2 {
+    color: antiquewhite;
+    padding: 10px;
+    font-size: 40px;
+}
+/* End Hero Style */
+
+/* Footer Styles */
+footer {
+    background-image: url(../images/Hubble-deep-field.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 15px;
+    border-top: 3px solid salmon;
+}
+
+footer a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+footer a:visited {
+    color: peachpuff;
+}
+
+footer ul li {
+    line-height: 1.5;
+}
+/* End Footer Styles */
+
+/* Reusable Classes */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
