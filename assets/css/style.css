@@ -5,7 +5,7 @@
 }
 
 body {
-    color: aqua;
+    color: whitesmoke;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -27,7 +27,7 @@ header a {
 }
 
 header a:visited {
-    color:aquamarine;
+    color:lightgray;
 }
 
 header nav ul {
@@ -53,16 +53,66 @@ header nav ul li {
     background-position: center;
     border-bottom: 3px solid salmon;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
     align-items: flex-end;
 }
 
-.hero-style h2 {
-    color: antiquewhite;
+.hero-style p {
+    color:black;
     padding: 10px;
     font-size: 40px;
+    text-align: center;
 }
 /* End Hero Style */
+
+/* Main Section Styles */
+main {
+    background-color: black;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+main h2 {
+    width: 20%;
+    font-size: 40px;
+    padding: 5px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+main div {
+    flex: 0 80%;
+    padding: 15px 0 0 15px;
+    line-height: 1.5;
+}
+/* End Main Section Styles */
+
+/* About Me Styles */
+.certifications h3 {
+    font-size: 30px;
+}
+
+.certifications ul {
+    padding-left: 20px;
+}
+
+.certifications ul li {
+    line-height: 2;
+}
+/* End About Me Styles */
+
+/* My Work Styles */
+.my-work {
+
+}
+
+.main-app img {
+    width: 80%;
+    height: auto;
+}
+/* End My Work Styles */
 
 /* Footer Styles */
 footer {
