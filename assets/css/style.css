@@ -27,12 +27,12 @@ header {
         background-size: cover;
         background-position: top;
     */
-    padding: 15px;
+    padding: 5px 15px;
 }
 
 header h1 {
-    font-size: 50px;
-    padding-top: 10px;
+    font-size: 36px;
+    padding-top: 13px;
 }
 
 header a {
@@ -53,9 +53,9 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 15px 0 10px 0;
+    margin: 15px 0 8px 0;
     padding: 10px 30px;
-    font-size: 2vw;
+    font-size: 22px;
 }
 
 .header-flex {
@@ -71,14 +71,14 @@ header nav ul li {
     height: 200px;
     background-image: url(../images/Nebula-cloud.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
 
 .hero-style p {
-    color:#000;
+    color: whitesmoke;
     padding: 10px;
     font-size: 30px;
     text-align: center;
@@ -90,8 +90,8 @@ main {
     font-size: 18px;
 }
 h2 {
-    font-size: 40px;
-    padding: 5px;
+    font-size: 30px;
+    padding: 10px 5px 5px 5px;
 }
 /* Main Section Styles */
 
@@ -108,7 +108,7 @@ h2 {
 }
 
 .certifications h3 {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .certifications ul {
@@ -140,7 +140,7 @@ h2 {
     margin: 20px 0;
     flex: 0 45%;
     background-color: #648767;
-    border: 4px solid #cc2936;
+    border: 4px solid #ffd700;
     border-radius: 10px;
     min-height: auto;
     display: flex;
@@ -163,7 +163,7 @@ h2 {
     background-color: #392f5a;
     width: 100%;
     text-align: center;
-    border-bottom: 2px solid #cc2936;
+    border-bottom: 2px solid #ffd700;
 }
 /* End My Work Styles */
 
@@ -203,7 +203,7 @@ footer address div {
 
 /* Reusable Classes */
 .border-bottom {
-    border-bottom: 3px solid #cc2936;
+    border-bottom: 5px solid #ffd700;
 }
 
 .title-border-bottom {
@@ -219,7 +219,7 @@ footer address div {
 @media screen and (max-width: 1024px) {
     header h1 {
         padding-top: 15px;
-        font-size: 40px;
+        font-size: 36px;
     }
 
     header nav ul li {
@@ -238,7 +238,7 @@ footer address div {
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
     .certifications h3 {
         font-size: 20px;
@@ -275,18 +275,17 @@ footer address div {
     header nav ul li {
         font-size: 3vw;
     }
+
     .app {
         min-height: 250px;
         flex: 0 80%;
     }
 
     .hero-style {
+        background-position: bottom;
         max-height: 100px;
         justify-content: center;
-    }
-
-    .hero-style p {
-        padding-bottom: 0;
+        align-items: center;
     }
 
     .main {
