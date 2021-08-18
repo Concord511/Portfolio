@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Ian R. Holmes</title>
 </head>
 <body>
 
     <!-- Header Section -->
-    <header class="flex-container">
+    <header class="header-flex border-bottom">
         <div>
             <h1>Ian Remington Holmes</h1>
         </div>
@@ -28,7 +29,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-style">
+    <section class="hero-style border-bottom">
         <p>
             Full Stack Developer &<br/>
             Professional Scrum Master<br/>
@@ -37,13 +38,13 @@
 
     <!-- Main Content Section -->
     <main>
-        <h2>About Me:</h2>
-        <section id="About-Me">
+        <section id="About-Me" class="about-me border-bottom">
+            <h2 class="title-border-bottom">About Me:</h2>
             <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nam sunt fugiat quisquam quibusdam esse itaque! Alias corporis error fuga veritatis sequi labore? Architecto vel nobis nostrum magni. Fugit, illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus culpa sequi incidunt voluptates facere quidem minima, laborum, quasi distinctio eum dolor consequatur accusantium unde voluptatem asperiores, earum rerum eos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat temporibus obcaecati esse cum, laborum voluptatibus aliquid aut voluptates deserunt, sint dolorem! Laudantium expedita saepe ducimus animi, autem perspiciatis fuga laboriosam.
             </div>
             <div class="certifications">
-                <h3>Certifications:</h3>
+                <h3 class="title-border-bottom">Certifications:</h3>
                 <ul>
                     <li>
                         Fullstack Web Development - University of Minnesota College of Continuing and Professional Studies
@@ -55,32 +56,42 @@
             </div>
         </section>
 
-        <h2>My Work:</h2>
-        <section id="My-Work" class="my-work">
-            <div class="main-app">
-                <a href="http://concord511.github.io/run-buddy"><img src="assets/images/placeholder.jpg" alt="My most prominent, working application." /></a>
-            </div>
-            <div class="apps-container">
-
-            </div>
-            <div class="apps-container">
-
+        <section id="My-Work" class="my-work border-bottom">
+            <h2 class="title-border-bottom">My Work:</h2>
+            <div class="app-container">
+                <div class="app main">
+                    Box 1
+                </div>
+                <div class="app">
+                    Box 2
+                </div>
+                <div class="app">
+                    Box 3
+                </div>
+                <div class="app">
+                    Box 4
+                </div>
+                <div class="app">
+                    Box 5
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer/Contact Me Section -->
-    <footer id="Contact-Me" class="flex-container">
-        <div>
-            Ian Remington Holmes <br/>
-            345 N Wasson Ln <br/>
-            River Falls, WI 54022<br/>
-        </div>
-        <div>
-            P: 651.500.0226 <br/>
-            <br/>
-            E: <a href="mailto:concord511@gmail.com">concord511@gmail.com</a>
-        </div>
+    <footer id="Contact-Me">
+        <h2 class="title-border-bottom">Contact Me:</h2>
+        <address class="footer-flex">
+            <div>
+                Ian Remington Holmes <br/>
+                345 N Wasson Ln <br/>
+                River Falls, WI 54022<br/>
+            </div>
+            <div>
+                Phone: 651.500.0226 <br/>
+                Email: <a href="mailto:concord511@gmail.com">concord511@gmail.com</a>
+            </div>
+        </address>
     </footer>
 
 </body>

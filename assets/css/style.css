@@ -15,7 +15,6 @@ header {
     background-size: cover;
     background-position: top;
     padding: 15px;
-    border-bottom: 3px solid salmon;
 }
 
 header h1 {
@@ -23,6 +22,7 @@ header h1 {
 }
 
 header a {
+    color: whitesmoke;
     text-decoration: none;
 }
 
@@ -39,8 +39,14 @@ header nav ul {
 }
 
 header nav ul li {
-    padding: 15px 10px;
-    font-size: 1.5vw;
+    padding: 20px 30px;
+    font-size: 2vw;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
 }
 /* End Header Styles */
 
@@ -51,51 +57,49 @@ header nav ul li {
     background-image: url(../images/Nebula-cloud.jpg);
     background-size: cover;
     background-position: center;
-    border-bottom: 3px solid salmon;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
 }
 
 .hero-style p {
     color:black;
     padding: 10px;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 /* End Hero Style */
 
 /* Main Section Styles */
 main {
-    background-color: black;
     font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: wrap;
 }
-
-main h2 {
-    width: 20%;
+h2 {
+    max-width: 25%;
     font-size: 40px;
     padding: 5px;
-    border-bottom: 2px solid whitesmoke;
+}
+/* Main Section Styles */
+
+/* About Me Styles */
+.about-me {
+    font-size: 18px;
+    background-color: black;
 }
 
-main div {
+.about-me div {
     flex: 0 80%;
     padding: 15px 0 0 15px;
     line-height: 1.5;
 }
-/* End Main Section Styles */
 
-/* About Me Styles */
 .certifications h3 {
     font-size: 30px;
+    max-width: 25%;
 }
 
 .certifications ul {
-    padding-left: 20px;
+    padding: 0 0 20px 20px;
 }
 
 .certifications ul li {
@@ -105,12 +109,27 @@ main div {
 
 /* My Work Styles */
 .my-work {
-
+    background-color: #333;
 }
 
-.main-app img {
-    width: 80%;
-    height: auto;
+.app-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main {
+    margin: 20px;
+    min-width: 90%;
+}
+
+.app {
+    margin: 20px 0;
+    flex: 0 45%;
+    background-color: cornflowerblue;
+    border: 4px solid red;
+    border-radius: 10px;
+    min-height: 400px;
 }
 /* End My Work Styles */
 
@@ -120,7 +139,10 @@ footer {
     background-size: cover;
     background-position: bottom;
     padding: 15px;
-    border-top: 3px solid salmon;
+}
+
+footer address {
+    padding-top: 25px;
 }
 
 footer a {
@@ -132,15 +154,50 @@ footer a:visited {
     color: peachpuff;
 }
 
-footer ul li {
-    line-height: 1.5;
+footer address div {
+    flex: 1;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: flex-start;
 }
 /* End Footer Styles */
 
 /* Reusable Classes */
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.border-bottom {
+    border-bottom: 3px solid salmon;
+}
+.title-border-bottom {
+    border-bottom: 2px solid whitesmoke;
+}
+/* End Reusable Classes */
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    header h1 {
+        padding-top: 6px;
+        font-size: 40px;
+    }
+
+    header nav ul li {
+        padding: 20px 15px;
+        font-size: 2vw;
+    }
 }
 
+@media screen and (max-width: 768px) {
+    main section h2 {
+        font-size: 24px;
+    }
+    .certifications h3 {
+        font-size: 22px;
+    }
+    .about-me {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}
