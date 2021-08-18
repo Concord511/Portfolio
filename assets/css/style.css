@@ -142,17 +142,21 @@ h2 {
     background-color: #648767;
     border: 4px solid #cc2936;
     border-radius: 10px;
-    min-height: 600px;
+    min-height: auto;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
-.app img {
-    align-self: center;
-justify-self: center;
-    width:max-content;
+.app a {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.app a img {
+    width: 100%;
 }
 
 .app-title {
