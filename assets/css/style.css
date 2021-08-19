@@ -38,6 +38,7 @@ header {
 header h1 {
     font-size: 36px;
     padding-top: 13px;
+    text-shadow: 0 0 10px black;
 }
 
 header a {
@@ -100,17 +101,18 @@ header nav ul li a:hover {
     padding: 10px;
     font-size: 30px;
     text-align: center;
+    text-shadow: 0 0 10px black;
 }
 /* End Hero Style */
 
 /* Main Section Styles */
 main {
     font-size: 18px;
-    text-shadow: 0 0 5px black;
 }
 h2 {
     font-size: 30px;
     padding: 10px 5px 5px 5px;
+    text-shadow: 0 0 10px black;
 }
 /* Main Section Styles */
 
@@ -128,6 +130,7 @@ h2 {
 
 .certifications h3 {
     font-size: 24px;
+    text-shadow: 0 0 10px black;
 }
 
 .certifications ul {
@@ -169,6 +172,10 @@ h2 {
     box-shadow: -5px 5px 10px black;
 }
 
+.app:hover {
+    opacity: 70%;
+}
+
 .app a {
     display: flex;
     width: 100%;
@@ -196,7 +203,7 @@ h2 {
 /* Footer Styles */
 footer {
     background-color: #392f5a;
-    padding: 0 15px 15px 15px;
+    padding: 0 15px 35px 15px;
 }
 
 footer address {
@@ -299,6 +306,10 @@ footer address div {
 @media screen and (max-width: 600px) {
     header {
         height: 150px;
+    }
+
+    html {
+        scroll-padding-top: 150px; /* height of sticky header */
     }
     
     header h1 {
