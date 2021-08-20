@@ -13,6 +13,10 @@
     padding: 0;
 }
 
+html {
+    scroll-padding-top: 79px; /* height of sticky header */
+}
+
 body {
     color: whitesmoke;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -20,16 +24,21 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #392f5a;
+    height: 80px;
     padding: 5px 15px;
     position: sticky;
-    top: 1;
+    top: 0;
+    background-image: url(../images/Nebula-cloud.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    z-index: 9999;
 }
 
 header h1 {
     font-size: 36px;
     padding-top: 13px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px black;
 }
 
 header a {
@@ -38,23 +47,34 @@ header a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header a:visited {
-    color:#bfc0c0;
-}
-
 header nav ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+header nav ul li {
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     list-style: none;
 }
 
-header nav ul li {
+header nav ul li a {
     margin: 15px 0 8px 0;
     padding: 10px 30px;
     font-size: 22px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #392f5a;
+    border: 1px solid #ffd700;
+    border-radius: 10px;
+}
+
+header nav ul li a:hover {
+    background-color: #ffd700;
+    border: 1px solid #392f5a;
+    border-radius: 10px;
+    color: #392f5a;
 }
 
 .header-flex {
@@ -74,6 +94,7 @@ header nav ul li {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    background-attachment: fixed;
 }
 
 .hero-style p {
@@ -81,7 +102,7 @@ header nav ul li {
     padding: 10px;
     font-size: 30px;
     text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px black;
 }
 /* End Hero Style */
 
@@ -92,6 +113,7 @@ main {
 h2 {
     font-size: 30px;
     padding: 10px 5px 5px 5px;
+    text-shadow: 0 0 10px black;
 }
 /* Main Section Styles */
 
@@ -109,6 +131,7 @@ h2 {
 
 .certifications h3 {
     font-size: 24px;
+    text-shadow: 0 0 10px black;
 }
 
 .certifications ul {
@@ -147,6 +170,11 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    box-shadow: -5px 5px 10px black;
+}
+
+.app:hover {
+    opacity: 70%;
 }
 
 .app a {
@@ -165,13 +193,18 @@ h2 {
     text-align: center;
     border-bottom: 2px solid #ffd700;
 }
+
+.app-subtitle {
+    padding-left: 5px;
+    font-size: 16px;
+    opacity: 80%;
+}
 /* End My Work Styles */
 
 /* Footer Styles */
 footer {
     background-color: #392f5a;
-    padding: 0 15px 15px 15px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0 15px 35px 15px;
 }
 
 footer address {
@@ -213,14 +246,28 @@ footer address div {
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
+    html {
+        scroll-padding-top: 100px; /* height of sticky header */
+    }
+
+    header {
+        height: 100px;
+    }
+    
     header h1 {
-        padding-top: 15px;
+        padding-top: 25px;
         font-size: 36px;
     }
 
     header nav ul li {
+        margin: 0;
+        padding: 10px 10px;
+    }
+
+    header nav ul li a {
+        margin: 15px 0 8px 0;
         padding: 10px 15px;
-        font-size: 2.3vw;
+        font-size: 16px;
     }
 
     .app {
@@ -230,24 +277,63 @@ footer address div {
 
 @media screen and (max-width: 768px) {
     header h1 {
-        font-size: 36px;
+        padding-top: 30px;
+        font-size: 24px;
+    }
+
+    header nav ul li a {
+        margin: 15px 0 8px 0;
+        padding: 10px 8px;
+        font-size: 16px;
     }
 
     h2 {
         font-size: 22px;
     }
+
     .certifications h3 {
         font-size: 20px;
     }
+    
     .about-me {
         font-size: 16px;
     }
+    
     .app {
         min-height: 300px;
     }
 }
 
 @media screen and (max-width: 600px) {
+    header {
+        height: 150px;
+    }
+
+    html {
+        scroll-padding-top: 150px; /* height of sticky header */
+    }
+    
+    header h1 {
+        font-size: 36px;
+        color: whitesmoke;
+        text-shadow: 0 0 10px black;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0 5px 0;
+        padding: 10px;
+    }
+
+    header nav ul li a {
+        margin: 5px 0 8px 0;
+        padding: 10px 8px;
+        font-size: 18px;
+    }
+
     h2, h3 {
         display: flex;
         justify-content: center;
@@ -268,13 +354,9 @@ footer address div {
         justify-content: space-around;
     }
 
-    header nav ul li {
-        font-size: 3vw;
-    }
-
     .app {
         min-height: 250px;
-        flex: 0 80%;
+        flex: 0 70%;
     }
 
     .hero-style {
@@ -287,5 +369,38 @@ footer address div {
     .main {
         min-height: 300px;
         min-width: 85%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    header nav ul li {
+        flex: 1 25%;
+        margin: 10px 0 5px 0;
+        padding: 10px 5px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    footer h2 {
+        padding-top: 30px;
+    }
+    footer address {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.6
+    }
+
+    footer address div {
+        text-align: center;
+    }
+
+    footer address div:last-child {
+        margin-top: 15px;
     }
 }
