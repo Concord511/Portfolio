@@ -25,7 +25,6 @@ body {
 /* Header Styles */
 header {
     height: 80px;
-    padding: 5px 15px;
     position: sticky;
     top: 0;
     background-image: url(../images/Nebula-cloud.jpg);
@@ -33,26 +32,33 @@ header {
     background-position: bottom;
     background-attachment: fixed;
     z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
 }
 
 header h1 {
-    font-size: 36px;
-    padding-top: 13px;
+    flex: 0 50%;
+    padding: 0 10px;
+    font-size: 48px;
     text-shadow: 0 0 10px black;
 }
 
-header a {
-    color: whitesmoke;
-    text-decoration: none;
+header nav {
+    flex: 0 50%;
+    display: flex;
+    align-items: center;
 }
 
 header nav ul {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header nav ul li {
-    margin: 0 10px;
+    width: 25%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -60,10 +66,14 @@ header nav ul li {
     list-style: none;
 }
 
-header nav ul li a {
-    margin: 15px 0 8px 0;
-    padding: 10px 30px;
-    font-size: 22px;
+header nav ul li a { 
+    width: 80%;
+    text-align: center;
+    word-wrap: normal;
+    color: whitesmoke; 
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 100%;
     background-color: #392f5a;
     border: 1px solid #ffd700;
     border-radius: 10px;
@@ -74,12 +84,6 @@ header nav ul li a:hover {
     border: 1px solid #392f5a;
     border-radius: 10px;
     color: #392f5a;
-}
-
-.header-flex {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;    
 }
 /* End Header Styles */
 
@@ -105,57 +109,33 @@ header nav ul li a:hover {
 }
 /* End Hero Style */
 
-/* Main Section Styles */
-main {
-    font-size: 18px;
+/* About Me Section */
+.about-me-column {
+    flex-direction: column;
+    text-align: left;
 }
 
-main section h2 {
-    padding: 15px;
+.indent {
+    text-indent: 25px;
 }
 
-main section p {
-    padding: 0 30px;
-}
-
-h2 {
-    font-size: 30px;
-    padding: 10px 5px 5px 5px;
-    text-shadow: 0 0 10px black;
-}
-/* Main Section Styles */
-
-/* About Me Styles */
-.about-me {
-    color: whitesmoke;
-    font-size: 18px;
-    background-color: #36558f;
-}
-
-.about-me div {
-    padding: 15px 0 0 15px;
-    line-height: 1.5;
-}
-
-.certifications h3 {
+.about-me-column h3 {
+    padding-top: 15px;
     font-size: 24px;
     text-shadow: 0 0 10px black;
 }
 
-.certifications ul {
-    padding: 10px 0 20px 20px;
+.about-me-column div p {
+    padding-left: 10px;
 }
 
-.certifications ul li {
-    line-height: 2;
+.secondary-cert {
+    font-size: 14px;
+    padding-bottom: 15px;
 }
-/* End About Me Styles */
+/* End About Me Section */
 
 /* My Work Styles */
-.my-work {
-    background-color: #36558f;
-}
-
 .app-container {
     display: flex;
     justify-content: space-around;
@@ -215,9 +195,6 @@ footer {
     padding: 0 15px 35px 15px;
 }
 
-footer address {
-    padding-top: 25px;
-}
 
 footer a {
     text-decoration: none;
@@ -228,27 +205,43 @@ footer a:visited {
     color: #bfc0c0;
 }
 
-footer address div {
-    flex: 1;
+footer address {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer-flex {
-    display: flex;
-    justify-content: flex-start;
+footer address div {
+    padding-right: 15px;
 }
 /* End Footer Styles */
 
 /* Reusable Classes */
-.border-bottom {
+.section-border-bottom {
     border-bottom: 5px solid #ffd700;
 }
 
-.title-border-bottom {
-    border-bottom: 2px solid whitesmoke;
+.section {
+    padding: 15px;
+    background-color: #36558f;
+    width: 100%;
+    display: flex;
+    color: whitesmoke;
+    font-size: 18px;
 }
 
-.div-text {
-    padding-right: 5px;
+.section-title {
+    text-align: right;
+    min-width: 15%;
+    font-size: 30px;
+    padding: 10px 15px 5px 5px;
+    text-shadow: 0 0 10px black;
+}
+
+.section-border-left {
+    line-height: 1.5;
+    padding-left: 15px;
+    border-left: 2px solid whitesmoke;
 }
 /* End Reusable Classes */
 
@@ -263,23 +256,32 @@ footer address div {
     }
     
     header h1 {
-        padding-top: 25px;
         font-size: 36px;
     }
 
     header nav ul li {
-        margin: 0;
-        padding: 10px 10px;
+        width: 25%;
     }
 
-    header nav ul li a {
-        margin: 15px 0 8px 0;
-        padding: 10px 15px;
-        font-size: 16px;
+    header nav ul li a { 
+        flex: 0 80%;
+        text-align: center;
+        word-wrap: normal;
+        color: whitesmoke; 
+        text-decoration: none;
+        padding: 10px 0;
+        font-size: 85%;
+        background-color: #392f5a;
+        border: 1px solid #ffd700;
+        border-radius: 10px;
+    }
+
+    .section-title {
+        font-size: 20px;        
     }
 
     .app {
-        min-height: 400px;
+        min-height: 200px;
     }
 }
 
@@ -290,9 +292,7 @@ footer address div {
     }
 
     header nav ul li a {
-        margin: 15px 0 8px 0;
         padding: 10px 8px;
-        font-size: 16px;
     }
 
     h2 {
@@ -328,7 +328,8 @@ footer address div {
     }
 
     header nav ul {
-        justify-content: center;
+        flex: 1;
+        justify-content: space-around;
     }
 
     header nav ul li {
@@ -354,11 +355,6 @@ footer address div {
     header nav {
         width: 100%;
         display: flex;
-        justify-content: space-around;
-    }
-    
-    header nav ul {
-        flex: 1;
         justify-content: space-around;
     }
 
