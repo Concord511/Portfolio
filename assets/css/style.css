@@ -118,6 +118,7 @@ header nav ul li a:hover {
 .about-me-column {
     flex-direction: column;
     text-align: left;
+    max-width: 85%;
 }
 
 .indent {
@@ -142,18 +143,19 @@ header nav ul li a:hover {
 
 /* My Work Styles */
 .app-container {
+    flex: 1;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .main {
-    min-width: 85%;
+    min-width: 95%;
 }
 
 .app {
     margin: 20px 0;
-    flex: 0 35%;
+    flex: 0 45%;
     background-color: #648767;
     border: 4px solid #ffd700;
     border-radius: 10px;
@@ -162,6 +164,10 @@ header nav ul li a:hover {
     align-items: flex-end;
     flex-wrap: wrap;
     box-shadow: -5px 5px 10px black;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: left top;
 }
 
 .app:hover {
@@ -182,7 +188,7 @@ header nav ul li a:hover {
     background-color: #392f5a;
     width: 100%;
     text-align: center;
-    border-bottom: 2px solid #ffd700;
+    border-top: 2px solid #ffd700;
 }
 
 .app-subtitle {
@@ -193,16 +199,9 @@ header nav ul li a:hover {
 
 .run-buddy {
     background-image: url(../images/run-buddy.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: top;
-
 }
+
 .placeholder1 {
-    max-width: 100%;
     background-image: url(../images/placeholder1.jpg);
 }
 
@@ -230,7 +229,7 @@ footer a:visited {
 }
 
 footer address {
-    width: 90%;
+    flex: 1;
     display: flex;
     justify-content: space-between;
 }
@@ -248,9 +247,9 @@ footer address {
 
 .section-title {
     text-align: right;
-    min-width: 15%;
+    width: 15%;
     font-size: 30px;
-    padding: 10px 15px 5px 5px;
+    padding: 10px 15px 5px 0;
     text-shadow: 0 0 10px black;
 }
 
@@ -300,7 +299,7 @@ footer address {
     }
 
     .app {
-        min-height: 200px;
+        height: 300px;
     }
 }
 
@@ -324,15 +323,7 @@ footer address {
     .app {
         flex: 0 45%;
     }
-
-    .app-title {
-        background-color: #392f5a;
-        width: 100%;
-        text-align: center;
-        border-bottom: 2px solid #ffd700;
-        align-self: center;
-    }
-
+    
     footer p {
         font-size: 14px;
     }
@@ -345,57 +336,83 @@ footer address {
 
     header {
         height: 125px;
+        padding-bottom: 10px;
         flex-direction: column;
     }
     
     header h1 {
-        flex: 1;
         text-align: center;
         font-size: 36px;
         padding-top: 10px;
-        color: whitesmoke;
-        text-shadow: 0 0 10px black;
     }
 
     header nav {
-        flex: 1;
+        width: 100%;
     }
 
     header nav ul li a {
-        margin: 5px 0 8px 0;
-        padding: 10px 0;
-        font-size: 14px;
+        font-size: 90%;
     }
 
-    h2, h3 {
-        display: flex;
+    .hero-style {
         justify-content: center;
+        align-items: center;
+    }
+
+    .section {
+        flex-direction: column;
+        padding: 15px 5px;
+        align-items: center;
+    }
+
+    .section-border-left {
+        line-height: 1.5;
+        padding: 10px 5px;
+        border-left: none;
+    }
+
+    .section-title {
+        padding: 10px 10px;
+        text-align: center;
+        width: 35%;
+        align-self: center;
+        font-size: 24px; 
+        border-bottom: 2px solid whitesmoke;
     }
     
     .header-flex {
         justify-content: center;
     }
 
-    header nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
+    .about-me-column {
+        max-width: 100%;
     }
 
-    .main {
-        min-width: 95%;
+    .about-me-column h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .about-me-column div p {
+        padding-left: 0;
+    }
+
+    .primary-cert {
+        text-align: center;
+    }
+
+    .secondary-cert {
+        text-align: center;
+        padding-bottom: 10px;
     }
 
     .app {
-        max-height: min-content;
         flex: 0 80%;
     }
 
-    .hero-style {
-        background-position: bottom;
-        max-height: 100px;
-        justify-content: center;
+    .section address {
         align-items: center;
+        width: 100%;
     }
 }
 
@@ -404,30 +421,11 @@ footer address {
         font-size: 30px;
     }
 
-    header nav ul li {
-        flex: 1 25%;
-        margin: 10px 0 5px 0;
-        padding: 10px 5px;
-    }
-
     header nav ul li a {
-        font-size: 14px;
+        font-size: 80%;
     }
 
-    footer h2 {
-        padding-top: 30px;
-    }
-    footer address {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.6
-    }
-
-    footer address div {
-        text-align: center;
-    }
-
-    footer address div:last-child {
-        margin-top: 15px;
+    .section-title {
+        width: 40%;
     }
 }
