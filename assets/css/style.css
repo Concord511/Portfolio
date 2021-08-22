@@ -149,8 +149,17 @@ header nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.main {
+.app-container a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.main-app {
     min-width: 95%;
+}
+
+.secondary-app {
+    width: 45%;
 }
 
 .app {
@@ -177,11 +186,6 @@ header nav ul li a:hover {
 .app span {
     height: max-content;
     justify-self: baseline;
-}
-
-.app a {
-    max-width: 100%;
-    height: auto;
 }
 
 .app-title {
@@ -320,10 +324,17 @@ footer address {
         height: 100px;
     }
 
-    .app {
+    .secondary-app {
         flex: 0 45%;
     }
     
+    .app-title{
+        font-size: 14px;    
+    }
+    .app-subtitle {
+        font-size: 14px;
+    }
+
     footer p {
         font-size: 14px;
     }
@@ -406,7 +417,7 @@ footer address {
         padding-bottom: 10px;
     }
 
-    .app {
+    .secondary-app {
         flex: 0 80%;
     }
 
