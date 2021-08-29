@@ -121,6 +121,17 @@ header nav ul li a:hover {
     max-width: 85%;
 }
 
+.about-me-column img {
+    width: 400px;
+    height: auto;
+    float: left;
+    padding: 10px;
+}
+
+.about-me-column div {
+    display: block;
+}
+
 .indent {
     text-indent: 25px;
 }
@@ -268,7 +279,8 @@ footer address {
 }
 /* End Reusable Classes */
 
-/* Media Queries */
+/* Start Media Queries
+    1024px Media Query */
 @media screen and (max-width: 1024px) {
     html {
         scroll-padding-top: 100px; /* height of sticky header */
@@ -294,6 +306,13 @@ footer address {
         font-size: 26px;
     }
 
+    .about-me-column img {
+        width: 45%;
+        height: auto;
+        float: left;
+        padding: 10px;
+    }
+
     .secondary-cert {
         font-size: 12px;
     }
@@ -307,6 +326,7 @@ footer address {
     }
 }
 
+/* 768px Media Query */
 @media screen and (max-width: 768px) {
     header h1 {
         font-size: 28px;
@@ -340,6 +360,7 @@ footer address {
     }
 }
 
+/* 600px Media Query - Centering Most Elemenets */
 @media screen and (max-width: 600px) {
     html {
         scroll-padding-top: 125px; /* height of sticky header */
@@ -427,6 +448,7 @@ footer address {
     }
 }
 
+/* 400px Media Query */
 @media screen and (max-width: 400px) {
     header h1 {
         font-size: 30px;
