@@ -134,7 +134,8 @@ header nav ul li a:hover {
 }
 
 .indent {
-    text-indent: 25px;
+    text-indent: 35px;
+    line-height: 1.8;
 }
 
 .about-me-column h3 {
