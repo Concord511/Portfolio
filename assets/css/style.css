@@ -215,23 +215,24 @@ header nav ul li a:hover {
 }
 
 .run-buddy {
-    background-image: url(../images/run-buddy.jpg);
+    background-image: url(../images/placeholder4.jpg);
 }
 
-.placeholder1 {
-    background-image: url(../images/placeholder1.jpg);
+.password-generator {
+    background-image: url(../images/Password-Generator.jpg);
+    background-position: top center;
 }
 
-.placeholder2 {
+.ultra-deep-field {
     background-image: url(../images/placeholder2.jpg);
 }
 
-.placeholder3 {
-    background-image: url(../images/placeholder3.jpg);
+.grey-fox {
+    background-image: url(../images/grey-fox-band.jpg);
 }
 
-.placeholder4 {
-    background-image: url(../images/placeholder4.jpg);
+.run-buddy {
+    background-image: url(../images/run-buddy.jpg);
 }
 /* End My Work Styles */
 
