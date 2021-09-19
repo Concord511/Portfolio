@@ -216,6 +216,7 @@ header nav ul li a:hover {
 
 .placeholder4 {
     background-image: url(../images/JSQ.jpg);
+    background-position: top center;
 }
 
 .password-generator {
@@ -224,11 +225,13 @@ header nav ul li a:hover {
 }
 
 .workday-scheduler {
-    background-image: url(../images/Workday-Scheduler.png);
+    background-image: url(../images/Workday-Scheduler.jpg);
+    background-position: top center;
 }
 
 .github {
     background-image: url(../images/GitHub.jpg);
+    background-position: top center;
 }
 
 .run-buddy {
