@@ -224,8 +224,8 @@ header nav ul li a:hover {
     background-position: top center;
 }
 
-.workday-scheduler {
-    background-image: url(../images/Workday-Scheduler.jpg);
+.weather-dashboard {
+    background-image: url(../images/Weather-Dashboard.jpg);
     background-position: top center;
 }
 
@@ -234,8 +234,9 @@ header nav ul li a:hover {
     background-position: top center;
 }
 
-.run-buddy {
-    background-image: url(../images/run-buddy.jpg);
+.grocery-list {
+    background-image: url(../images/Grocery-List.jpg);
+    background-position: top center;
 }
 /* End My Work Styles */
 
